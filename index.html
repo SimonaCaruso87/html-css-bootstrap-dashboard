@@ -20,8 +20,44 @@
 <body class="debug">
 
     <!-- Header -->
-           <Header>
-                  Lalalalala
+           <Header class="bg-light">
+
+    <!-- Navbar -->
+                 <nav class="navbar bg-white navbar-expand-md sticky-top">
+                    <div class="container-fluid">
+                        <div class="row">
+    <!-- Logo -->
+                            <div class="col-auto">
+                                <a class="navbar-brand" href="#">
+                                <img src="img/logo.svg" alt="Logo" class="d-inline-block align-text-top img-fluid">
+                                </a>
+                            </div>
+    <!-- Barra di ricerca -->
+                            <div class="col">
+                                <form class="d-flex" role="search">
+                                  <input class="form-control me-2" width="80" type="search" placeholder="prova a cercare lezioni di laravel" aria-label="Search">
+                                </form>
+
+                            </div>
+    <!-- Menu Navbar -->
+                            <div class="col-auto">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                      <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
+                                      <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i></a>
+                                      <a class="nav-link" href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                                      <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+                                    </div>
+                                  </div>
+
+                            </div>
+                        </div>
+                    </div>    
+                 </nav>
+    <!-- Fine Navbar -->
            </Header>
     <!-- Fine Header -->
 
