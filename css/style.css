@@ -83,8 +83,17 @@ body{
  /*  HEADER  */
  
  .my-background{
-    background-color: ;
+    background-color: #1B72E8;
  }
+
+ .my-budge-color{
+    background-color: #165BBA;
+ }
+ 
+ .my-font{
+    font-size: .75rem;
+ }
+
 
 /************************************************
     SOLUZIONE RESPONSIVE-MEDIA-QUERY MOBILE-FIRST
