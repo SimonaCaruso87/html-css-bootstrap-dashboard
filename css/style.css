@@ -55,6 +55,11 @@ body{
     height: var(--header-height);
 }
 
+.my-bg-ricerca{
+    background-color: #E5E5E5;
+}
+
+
 /*
    SECTION
 */
@@ -77,7 +82,7 @@ body{
 }
 
 .my-text{
-    font-size: .8125rem;
+    font-size: .9375rem;
 }
 
  /*  HEADER  */
@@ -86,12 +91,19 @@ body{
     background-color: #1B72E8;
  }
 
- .my-budge-color{
+ .my-badge-color{
     background-color: #165BBA;
+    font-size: .75rem;
  }
  
  .my-font{
     font-size: .75rem;
+ }
+
+ .my-font-2{
+    font-size: .75rem;
+    border-color: white;
+    background-color:var(--header-height);
  }
 
 

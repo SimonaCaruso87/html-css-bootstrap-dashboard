@@ -35,7 +35,7 @@
     <!-- Barra di ricerca -->
                             <div class="col">
                                 <form class="d-flex" role="search">
-                                  <input class="form-control me-2 bg-dark" width="80" type="search" placeholder="prova a cercare lezioni di laravel" aria-label="Search">
+                                  <input class="form-control me-2 my-bg-ricerca" width="80" type="search" placeholder="prova a cercare lezioni di laravel" aria-label="Search">
                                 </form>
 
                             </div>
@@ -49,8 +49,24 @@
                                       <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
                                       <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i></a>
                                       <a class="nav-link" href="#"><i class="bi bi-three-dots-vertical"></i></a>
-                                      <a class="nav-link" href="#"><i class="bi bi-bell-fill my-icon"></i></a>
-                                    </div>
+                                      <li class="dropdown d-flex align-items-center">
+                                        <a
+                                          class="text-decoration-none px-2 dropdown-toggle my-icon my-list"
+                                          href="#"
+                                          role="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <i class="fa-solid fa-bell my-icon"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                          <li>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                          </li>
+                                        </ul>
+                                       </li>
                                   </div>
 
                             </div>
@@ -65,8 +81,8 @@
 
             <aside class="aside bg-black d-flex flex-column justify-content-between">
     <!-- Section sx  -->
-                        <nav class="text-center">
-                            <ul class="my-list p-0 mt-4 me-4 ms-2 my-text">
+                        <nav>
+                            <ul class="my-list mt-4 me-4 my-text">
                                 <li><a href="#" class="text-decoration-none"><i class="bi bi-house text-white p-2"></i><span class="text-white d-none d-lg-inline-block">Home</span></a></li>
 
                                 <li><a href="#" class="text-decoration-none"><i class="bi bi-bar-chart-fill text-white p-2"></i><span class="text-white d-none d-lg-inline-block">Stats</span></a></li>
@@ -90,30 +106,33 @@
                                     <div>
                                         <Span class="fs-4 text-white">Boolean</Span>
                                         <span class="badge rounded-pill
-                                        text-white my-budge-color">Piano blaze</span>
+                                        text-white my-badge-color p-2 mb-2">Piano blaze</span>
                                         <div>
                                         <span class="badge rounded-pill
-                                        text-white my-budge-color">3 app</span>
+                                        text-white my-badge-color p-2">3 app</span>
                                         <span><i class="bi bi-chevron-double-right text-white"></i></span>
                                         <span class="badge rounded-pill
-                                        text-white my-budge-color d-none d-lg-inline-block">Boolean mobile app</span><span class="badge rounded-pill
-                                        text-white my-budge-color d-none d-lg-inline-block">Bollean web app</span><span class="badge rounded-pill
-                                        text-white my-budge-color d-none d-lg-inline-block">Boolean blog app</span>
+                                        text-white my-badge-color d-none d-lg-inline-block me-2 p-2">Boolean mobile app</span><span class="badge rounded-pill
+                                        text-white my-badge-color d-none d-lg-inline-block me-2 p-2">Boolean web app</span><span class="badge rounded-pill
+                                        text-white my-badge-color d-none d-lg-inline-block p-2 mt-2">Boolean blog app</span>
                                         <span class="badge rounded-pill
-                                        text-white my-budge-color d-lg-none">+</span>
+                                        text-white my-badge
+                                        -color d-lg-none">+</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-4">
                                     <div>
-                                        CENTER
+                                        <span class="text-white my-font">Studenti online negli ultimi 30 minuti</span>
+                                        <div class="text-white fs-4">125</div>
                                     </div>
                                 </div>
 
                                 <div class="col-2">
                                     <div>
-                                        RIGHT
+                                        <span class="my-font-2 text-white pe-2">Nuovo Studente</span>
+                                        <button type="button" class="btn btn-danger btn-sm my-font-2 d-inline-block">+</button>
                                     </div>
                                 </div>
 
@@ -122,7 +141,276 @@
                     </header>
 
                     <section>
-                        bla bla
+                        <div class="container-fluid">
+                            <div class="row p-3 bg-white">
+  <!-- Section Prossime Classi -->
+                                <div class="col-8 bg-gradient">
+                                 <div class="card">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action bg-light fs-4 fw-bold">Prossime Classi</a>
+                                      
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                                        <div class="row">
+                                          <div class="col-4 my-font">
+                                           Nome
+                                          </div>
+
+                                          <div class="col-2 my-font">
+                                           Data inizio
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          ROI
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Stato
+                                          </div>
+                                          <div class="col-2 my-font">
+                                          Azioni
+                                          </div>
+
+                                        </div>
+                                        </a>
+
+                                        
+                                        
+                                      </div>
+                                 </div>
+                                </div>
+    <!-- Section Todo -->
+                                <div class="col-4 bg-white">
+                                    <div class="card">
+                                        
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action bg-light fs-4 fw-bold">Todo</a>
+
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                                                  <label class="form-check-label my-font" for="firstRadio">Kickoff nuove classi</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                                                  <label class="form-check-label my-font" for="secondRadio">Lezione su bootstrap 5 in classe #75</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                                                  <label class="form-check-label my-font" for="thirdRadio">Controllare username github studenti</label>
+                                                </li>
+                                              </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+<!-- Section FAQ
+
+ -->
+                                <div class="col-8 pt-2">
+                                <div class="card">
+                                    
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action bg-light fs-4 fw-bold">F.A.Q.</a>
+
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  Clicca sul + in alto nella sezione blu*.
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  Clicca sull'icona della campanella.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                 No , puoi chiamare Heidi e salire sui monti però.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>    
+
+
+                                </div>
+                                </div>
+
+                                <div class="col-4 bg-danger">
+                                    <div class="card bg-black">
+                                        BLA BLA BLA 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </section>
 
 
