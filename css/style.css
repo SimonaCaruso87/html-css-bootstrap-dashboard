@@ -77,12 +77,14 @@ body{
 }
 
 .my-text{
-    font-size: .9375rem;
+    font-size: .8125rem;
 }
 
-
-
-  
+ /*  HEADER  */
+ 
+ .my-background{
+    background-color: ;
+ }
 
 /************************************************
     SOLUZIONE RESPONSIVE-MEDIA-QUERY MOBILE-FIRST
