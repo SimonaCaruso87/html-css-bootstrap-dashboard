@@ -23,7 +23,12 @@ body{
        --first-text:#FFFFFF;
        --second-text:white;
        --third-text:#6A6A6A;
-   }
+
+   /*   HEIGHT   */
+       
+    --header-height: 60px;
+
+    }
    
 /************************************************
     UTILITIES
@@ -42,15 +47,39 @@ body{
    HEADER
 */
 
+.my-icon{
+    color:orangered;
+}
+
+#main-header{
+    height: var(--header-height);
+}
 
 /*
-   MAIN
+   SECTION
 */
 
 
-/* 
-    FOOTER
-*/
+/*aside*/
+
+.aside{
+    background-image: url(/img/sidebar-bg.png);
+}
+
+.my-list{
+    list-style-type: none;
+}
+
+/* main */
+
+#main-section{
+    height: calc(100vh - var(--header-height));
+}
+
+.my-text{
+    font-size: .9375rem;
+}
+
 
 
   
