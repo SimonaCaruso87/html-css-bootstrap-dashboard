@@ -70,7 +70,7 @@ body{
 .aside{
     background-image: url(/img/sidebar-bg.png);
     height: calc(100vh - var(--header-height) );
-    width: 11.25rem;
+    width: 9.375rem;
 }
 
 .my-list{
