@@ -27,9 +27,14 @@
                     <div class="container-fluid d-block">
                         <div class="row bg-light">
     <!-- Logo -->
-                            <div class="col-auto">
+                            <div class="col-auto d-none d-lg-block d-xl-block d-xs-none d-sm-none d-md-none ">
                                 <a class="navbar-brand" href="#">
                                 <img src="img/logo.svg" alt="Logo" class="d-inline-block align-text-top img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-auto d-lg-none d-xl-none d-xxl-none">
+                                <a class="navbar-brand" href="#">
+                                <img src="img/mobile-logo.png" alt="Logo" class="d-inline-block align-text-top img-fluid verti" width="40">
                                 </a>
                             </div>
     <!-- Barra di ricerca -->
@@ -40,18 +45,15 @@
 
                             </div>
     <!-- Menu Navbar -->
-                            <div class="col-auto">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                  </button>
+                            <div class="col-auto d-flex align-items-center">
                                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <div class="navbar-nav">
-                                      <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
-                                      <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i></a>
-                                      <a class="nav-link" href="#"><i class="bi bi-three-dots-vertical"></i></a>
+                                      <a class="nav-link active d-none d-lg-block" aria-current="page" href="#"><i class="bi bi-list-ul"></i></a>
+                                      <a class="nav-link d-none d-lg-block" href="#"><i class="bi bi-question-circle-fill"></i></a>
+                                      <a class="nav-link d-none d-lg-block" href="#"><i class="bi bi-three-dots-vertical"></i></a>
                                       <li class="dropdown d-flex align-items-center">
                                         <a
-                                          class="text-decoration-none px-2 dropdown-toggle my-icon my-list"
+                                          class="text-decoration-none px-2 dropdown-toggle my-icon my-list d-block"
                                           href="#"
                                           role="button"
                                           data-bs-toggle="dropdown"
