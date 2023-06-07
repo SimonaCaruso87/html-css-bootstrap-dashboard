@@ -67,9 +67,8 @@ body{
 
 /*aside*/
 
-.aside{
+.aside-container{
     background-image: url(/img/sidebar-bg.png);
-    height: calc(100vh - var(--header-height) );
     width: 9.375rem;
 }
 
